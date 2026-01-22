@@ -8,10 +8,7 @@
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- Fonts:
-    - Nordeco (if you have it installed or later add @font-face)
-    - Quicksand + Open Sans from Google Fonts
-  -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -148,31 +145,29 @@
     .topnav.scrolled .logo-lockup img{ transform: scale(0.92); }
     .topnav.scrolled .logo-lockup span{ transform: translateY(-1px); }
 
-    /* HERO (simplified, calm) */
+    /* HERO (now uses hero-bg.jpg + overlay for readability) */
     .hero{
       position:relative;
       overflow:hidden;
-      padding:90px 20px 80px;
       text-align:center;
 
-      /* If you want the banner image, uncomment the next line and keep hero-bg.png in the folder */
-      background: url("hero-bg.jpg") center/cover no-repeat; 
+      /* Mobile-friendly sizing */
+      min-height: clamp(520px, 72vh, 760px);
+      padding:96px 20px 84px;
 
-      background: linear-gradient(
-        180deg,
-        rgba(255,246,238,1) 0%,
-        rgba(255,246,238,1) 55%,
-        rgba(242,182,160,0.18) 100%
-      );
+      background: url("hero-bg.jpg") center/cover no-repeat;
+      background-color: var(--warm-cream);
     }
     .hero::before{
       content:"";
       position:absolute;
       inset:0;
-      background:
-        radial-gradient(circle at 25% 20%, rgba(175,198,217,0.20), transparent 55%),
-        radial-gradient(circle at 75% 35%, rgba(157,184,160,0.18), transparent 55%),
-        radial-gradient(circle at 55% 80%, rgba(242,182,160,0.18), transparent 60%);
+      background: linear-gradient(
+        180deg,
+        rgba(255,246,238,0.72) 0%,
+        rgba(255,246,238,0.58) 55%,
+        rgba(255,246,238,0.72) 100%
+      );
       pointer-events:none;
       z-index:0;
     }
@@ -183,6 +178,7 @@
       height:auto;
       margin:0 auto 16px;
       display:block;
+      filter: drop-shadow(0 14px 26px rgba(0,0,0,0.10));
     }
     .hero p{
       font-size:1.1rem;
@@ -470,6 +466,19 @@
       .logo-lockup img{ height:28px; }
       .logo-lockup span{ font-size:15px; }
       .ig-link{ width:34px; height:34px; border-radius:11px; }
+
+      /* Hero mobile tuning */
+      .hero{
+        padding:78px 16px 68px;
+        min-height: 520px;
+        background-position: 55% center; /* nudges composition nicely on phones */
+      }
+      .hero p{ font-size:1.03rem; }
+    }
+
+    @media(max-width:420px){
+      .hero{ background-position: 58% center; }
+      .hero-logo{ width:min(360px, 86vw); }
     }
 
     /* Soft section separators */
@@ -543,7 +552,9 @@
       Mini &amp; Me Art Studio is a playful, relaxed painting experience for parents and their little artists (ages 2–5).
       We focus on shared time, creativity, and joy — no pressure, no perfection, just messy fun and sweet memories.
     </p>
-<p></p>
+
+    <p></p>
+
     <h2>About the Owner</h2>
     <p>
       Mini &amp; Me grew out of Laura’s own journey into motherhood — learning to slow down, create again, and see the world through little eyes.
