@@ -131,7 +131,7 @@ ul{ list-style:none; padding-left:0; }
 .topnav.scrolled .logo-lockup img{ transform: scale(0.92); }
 .topnav.scrolled .logo-lockup span{ transform: translateY(-1px); }
 
-/* HERO (hero-bg.jpg + overlay) */
+/* HERO */
 .hero{
   position:relative;
   overflow:hidden;
@@ -192,10 +192,8 @@ ul{ list-style:none; padding-left:0; }
 .hero .hero-logo{ animation-delay:0.05s; }
 .hero p:nth-of-type(1){ animation-delay:0.18s; }
 .hero p.tagline{ animation-delay:0.28s; }
-.hero .cta-row{ animation-delay:0.40s; } /* FIXED */
-@keyframes heroIn{
-  to{ opacity:1; transform:translateY(0); }
-}
+.hero .cta-row{ animation-delay:0.40s; } /* fixed */
+@keyframes heroIn{ to{ opacity:1; transform:translateY(0); } }
 
 /* ABOUT */
 .about{
@@ -282,7 +280,7 @@ ul{ list-style:none; padding-left:0; }
 }
 .step h3{ margin-bottom:8px; }
 
-/* FAQ / POLICIES */
+/* FAQ */
 .faq{ max-width:900px; margin:0 auto; }
 .faq-item{
   margin-bottom:15px;
@@ -304,7 +302,7 @@ ul{ list-style:none; padding-left:0; }
 }
 .faq-item p{ margin-top:10px; }
 
-/* BOOKING (unused currently but kept) */
+/* BOOKING */
 .booking{
   background:var(--clay);
   color:#fff;
@@ -355,7 +353,7 @@ ul{ list-style:none; padding-left:0; }
   transform: translateY(-1px);
 }
 
-/* MAILCHIMP THEME */
+/* MAILCHIMP */
 .mc-theme{ text-align:center; }
 .mc-theme .indicates-required{ font-size:12px; opacity:0.7; margin-bottom:10px; }
 .mc-theme label{
@@ -449,7 +447,6 @@ footer li{ margin:8px 0; }
   .logo-lockup img{ height:28px; }
   .logo-lockup span{ font-size:15px; }
   .ig-link{ width:34px; height:34px; border-radius:11px; }
-
   .hero{
     padding:78px 16px 68px;
     min-height: 520px;
