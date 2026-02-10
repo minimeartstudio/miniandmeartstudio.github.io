@@ -1,10 +1,13 @@
-// Nav scroll behavior
-const header = document.querySelector(".topnav");
+// Nav shrink on scroll (same behavior you had)
+(function () {
+  const header = document.querySelector(".topnav");
+  if (!header) return;
 
-function onScroll() {
-  if (window.scrollY > 18) header.classList.add("scrolled");
-  else header.classList.remove("scrolled");
-}
+  const onScroll = () => {
+    if (window.scrollY > 18) header.classList.add("scrolled");
+    else header.classList.remove("scrolled");
+  };
 
-window.addEventListener("scroll", onScroll, { passive: true });
-onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+})();
