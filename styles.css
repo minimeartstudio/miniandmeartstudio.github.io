@@ -277,42 +277,7 @@ ul{ list-style:none; padding-left:0; }
   padding-bottom:2px;
 }
 
-/* Sessions */
-.sessions{
-  background: var(--muted-sage);
-  color:#fff;
-  text-align:center;
-}
-
-/* If you use .container inside, let it control width */
-.sessions .container{ padding-top:60px; padding-bottom:60px; }
-
-.sessions p{
-  max-width:900px;
-  margin:14px auto 0;
-  font-size:1.08rem;
-}
-
-/* Mini pills row */
-.mini-row{
-  margin-top:18px;
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  justify-content:center;
-}
-.mini-row-tight{ margin-top:18px; }
-
-.mini-pill{
-  background: rgba(255,255,255,0.18);
-  border: 1px solid rgba(255,255,255,0.24);
-  padding:10px 14px;
-  border-radius:999px;
-  font-weight:900;
-  font-family:'Quicksand', sans-serif;
-}
-
-/* Steps */
+/* Session steps */
 .steps-wrap{
   display:flex;
   flex-wrap:wrap;
@@ -324,11 +289,7 @@ ul{ list-style:none; padding-left:0; }
 .step{
   flex:1 1 240px;
   max-width:320px;
-  background: rgba(255,255,255,0.14); /* key change */
-  border: 1px solid rgba(255,255,255,0.20);
-  padding:22px;
-  border-radius:16px;
-  color:#fff;
+  background: #fff;
   text-align:center;
   box-shadow:0 8px 18px rgba(0,0,0,0.10);
   transition:transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
@@ -344,12 +305,12 @@ ul{ list-style:none; padding-left:0; }
 
 /* Sessions-specific CTA */
 .sessions .btn-secondary{
-  background: #ffffff;
-  color: var(--soft-blush);
+  background: var(--dusty-sky);
+  color: #fff;
 }
 
 .sessions .btn-secondary:hover{
-  background: var(--dusty-sky);
+  background: var(--clay);
   transform: translateY(-1px);
 }
 
