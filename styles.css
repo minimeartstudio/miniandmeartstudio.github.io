@@ -345,7 +345,7 @@ ul{ list-style:none; padding-left:0; }
 /* Sessions-specific CTA */
 .sessions .btn-secondary{
   background: #ffffff;
-  color: var(--muted-sage);
+  color: var(--soft-blush);
 }
 
 .sessions .btn-secondary:hover{
