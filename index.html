@@ -1,17 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" id="top">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Mini & Me Art Studio | A Parent + Me Painting Experience</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini & Me Art Studio | A Shared Creative Practice</title>
 
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
-  <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -20,45 +22,48 @@
   <header class="topnav">
     <div class="nav-inner">
 
+      <!-- Brand lockup -->
       <a class="brand logo-lockup" href="#top" aria-label="Mini & Me Art Studio home">
-        <img src="icon-mark.png" alt="Mini & Me Art Studio icon" />
+        <img src="icon-mark.png" alt="Mini & Me Art Studio icon">
         <span>Mini &amp; Me Art Studio</span>
       </a>
 
+      <!-- Updated navigation (practice-first) -->
       <nav class="nav-links" aria-label="Site">
         <a href="#about">About</a>
-       <!-- <a href="#expect">Expect</a> -->
-        <a href="#classes">Classes</a>
-       <!-- <a href="https://form.jotform.com/260195919445163" target="_blank" rel="noopener noreferrer">Waiver</a>
-        <a href="https://bookwhen.com/minimeartstudio" target="_blank" rel="noopener noreferrer" class="nav-cta">Book</a> -->
-        <a href="#policies">Policies</a>
-      <!--  <a href="#email">Email</a> -->
+        <a href="#practice">Practice</a>
+        <a href="#materials">Materials</a>
+        <a href="/journal/">Studio Notes</a>
+        <a href="#shop" class="nav-cta">Shop</a>
+        <a href="#email">Email</a>
         <a href="#contact">Contact</a>
-        <a href="https://a.co/d/0C9qWFD" target="_blank" rel="noopener noreferrer">Buy the Book</a>
+
+        <!-- Buy the Book (Amazon) -->
+        <a href="https://a.co/d/0C9qWFD" target="_blank" rel="noopener noreferrer" class="nav-book">Buy the Book</a>
       </nav>
 
-      <a class="ig-link" href="https://www.instagram.com/miniandme.artstudio" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <!-- IG -->
+      <a class="ig-link" href="https://www.instagram.com/miniandme.artstudio" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
           <path d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 1.5C5.96 3.5 3.5 5.96 3.5 7.75v8.5c0 1.79 2.46 4.25 4.25 4.25h8.5c1.79 0 4.25-2.46 4.25-4.25v-8.5c0-1.79-2.46-4.25-4.25-4.25h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
         </svg>
       </a>
-
     </div>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <h1 class="sr-only">Mini & Me Art Studio</h1>
+    <h1 class="sr-only">Mini &amp; Me Art Studio</h1>
 
-    <img class="hero-logo" src="logo-transparent.png" alt="Mini & Me Art Studio logo" />
+    <img class="hero-logo" src="logo-transparent.png" alt="Mini & Me Art Studio logo">
 
-    <p>In a world that rushes childhood, we choose to slow down.</p>
-    <p class="tagline">Tiny hands. Big creativity.</p>
+    <p class="tagline">Her freedom. My skill. Our art.</p>
+    <p class="subline">Mini &amp; Me Art Studio is a shared creative practice — a place to slow down, explore materials, and make art side by side.</p>
 
     <div class="cta-row">
-      <a href="https://form.jotform.com/260195919445163" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Complete Waiver</a>
-      <a href="https://bookwhen.com/minimeartstudio" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Book a Class</a>
-      <a href="https://a.co/d/0C9qWFD" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Buy ABCs of Wonderful Me</a>
+      <a href="#practice" class="btn btn-primary">Explore the Practice</a>
+      <a href="#materials" class="btn btn-secondary">Materials We Love</a>
+      <a href="/journal/" class="btn btn-primary">Read Studio Notes</a>
     </div>
   </section>
 
@@ -66,41 +71,221 @@
   <section id="about" class="about section">
     <h2>What is Mini &amp; Me Art Studio?</h2>
     <p>
-      Mini &amp; Me Art Studio is a parent + child art experience rooted in connection, presence, and play. Here, art isn’t about getting it right — it’s about showing up together.
-      There are no expectations to perform.
-      No pressure to create something perfect.
-      Only space to explore, experiment, and make memories side by side.
-      Because the moments matter more than the masterpiece.
+      Mini &amp; Me Art Studio is a shared creative practice for parents and little ones.
+      Art here isn’t about getting it right — it’s about making space to slow down, explore, and create side by side.
+      There are no expectations to perform. No pressure to create something perfect. 
+      Only space to explore, experiment, and make memories side by side. Because the moments matter more than the masterpiece.
     </p>
+  
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Her freedom</h3>
+        <p>Uninhibited mark-making, movement, experimentation, and the honest now.</p>
+      </div>
+      <div class="about-card">
+        <h3>My skill</h3>
+        <p>Editing, layering, composition, and quiet structure—without erasing her voice.</p>
+      </div>
+      <div class="about-card">
+        <h3>Our art</h3>
+        <p>Collaborative pieces that feel alive—raw and refined, held together in conversation.</p>
+      </div>
+    </div>
 
-    <h2>What We Believe</h2>
+    <h2 class="spacer-top">About the Owner</h2>
     <p>
-      At Mini &amp; Me Art Studio, we believe children are already worthy.
-      Already capable.
-      Already wonderful.
-
-      Our classes are designed to nurture confidence without comparison, creativity without pressure, and connection without distraction.
-
-      We follow the child’s lead, honor their process, and celebrate who they are — not what they produce.
-
-      This isn’t about art skills.
-      It’s about self-trust, presence, and shared joy.
-    </p>
-
-    <h2>About the Owner</h2>
-    <p>
-      Mini &amp; Me Art Studio grew out of Laura’s own journey into motherhood — learning to slow down, create again, and see the world through little eyes.
-      What began as a desire to make art alongside her own child became a space for connection, creativity, and presence.
-      She believes in process over perfection, in following a child’s lead, and in creating an environment where both parent and child can explore,
-      make a mess, and simply be together. Mini &amp; Me is about more than painting — it’s about shared moments, gentle guidance, and building memories through art.
+      Mini &amp; Me grew out of Laura’s own return to art through motherhood—learning to slow down, create again, and see the world through little eyes.
+      What began as making alongside her own child became a studio practice rooted in process, play, and presence.
+      She believes in process over perfection, in following a child’s lead, and in creating an environment where both parent and child can explore, 
+      make a mess, and simply be together. Mini & Me is about more than painting — it’s about shared moments, gentle guidance, and building memories through art.
     </p>
   </section>
 
-  <!-- WHAT TO EXPECT -->
+  <!-- PRACTICE -->
+  <section id="practice" class="section container text-center">
+    <h2>Practice</h2>
+    <p class="max-text">
+      Not lessons. Not crafts. A practice.
+      We begin with her marks, then respond with intention—layer by layer—without rushing the work toward an outcome.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Our Process</h3>
+        <p>Her marks become the raw layer. I respond with editing, linework, and quiet composition—so the piece stays alive.</p>
+      </div>
+
+      <div class="card">
+        <h3>Create Alongside Us</h3>
+        <p>Studio notes, prompts, and set-ups you can try at home—simple enough to start today.</p>
+        <a class="text-link" href="/journal/">Go to Studio Notes →</a>
+      </div>
+
+      <div class="card">
+        <h3>Start Small</h3>
+        <p>Big paper. Limited palette. Ten minutes. Respond—don’t correct. Keep it gentle.</p>
+        <a class="text-link" href="#materials">See Materials →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MATERIALS -->
+  <section id="materials" class="section container text-center">
+    <h2>Materials We Love</h2>
+    <p class="max-text">
+      A curated list of supplies we return to again and again — chosen for openness, tactility, and longevity.
+      (Add your favorite links as you go.)
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Paper</h3>
+        <ul>
+          <li><a class="text-link" href="#" target="_blank" rel="noopener noreferrer">Large roll paper (add link)</a></li>
+          <li><a class="text-link" href="#" target="_blank" rel="noopener noreferrer">Heavyweight sketch paper (add link)</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Paint</h3>
+        <ul>
+          <li><a class="text-link" href="#" target="_blank" rel="noopener noreferrer">Washable tempera / gouache (add link)</a></li>
+          <li><a class="text-link" href="#" target="_blank" rel="noopener noreferrer">Acrylic for parent layer (add link)</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Tools</h3>
+        <ul>
+          <li><a class="text-link" href="#" target="_blank" rel="noopener noreferrer">Wide brushes + rollers (add link)</a></li>
+          <li><a class="text-link" href="#" target="_blank" rel="noopener noreferrer">Oil pastels / crayons (add link)</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section id="shop" class="section container text-center">
+    <h2>Studio Shop</h2>
+    <p class="max-text">
+      Collaborative works from our shared practice — small-batch prints and studio pieces.
+      (Launching soon.)
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Prints</h3>
+        <p>Limited edition collaborative prints (coming soon).</p>
+        <a href="#email" class="btn btn-secondary">Join the list</a>
+      </div>
+
+      <div class="card">
+        <h3>Merch</h3>
+        <p>Soft goods &amp; studio essentials (coming soon).</p>
+        <a href="#email" class="btn btn-secondary">Get notified</a>
+      </div>
+
+      <div class="card">
+        <h3>Originals</h3>
+        <p>Occasional one-of-one pieces from our practice.</p>
+        <a href="https://www.instagram.com/miniandme.artstudio" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Follow along</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SESSIONS COMING LATER -->
+  <section id="sessions" class="sessions section">
+    <h2>Sessions (Coming Later)</h2>
+    <p>
+      In the future, Mini &amp; Me will occasionally offer parent–child sessions, workshops, and studio gatherings.
+      For now, the studio lives through the notes + materials — a place to create alongside your little at your own pace.
+    </p>
+
+    <div class="mini-row">
+      <div class="mini-pill">Workshops</div>
+      <div class="mini-pill">Parent–Child Sessions</div>
+      <div class="mini-pill">Exhibitions</div>
+      <div class="mini-pill">Studio Gatherings</div>
+    </div>
+
+    <div class="mini-row mini-row-tight">
+      <a href="/journal/" class="btn btn-primary">Read Studio Notes</a>
+      <a href="#email" class="btn btn-secondary">Get updates</a>
+    </div>
+  </section>
+
+  <!-- EMAIL (MAILCHIMP) -->
+  <section id="email" class="section container text-center">
+    <h2>Stay in Touch</h2>
+    <p>Print releases, studio notes, and new work.</p>
+
+    <div class="embed-card mc-theme" style="max-width:760px;">
+      <div id="mc_embed_shell">
+        <div id="mc_embed_signup">
+          <form action="https://gmail.us17.list-manage.com/subscribe/post?u=3923cd34aa6706fb6e6e77d78&amp;id=f2825af5ca&amp;f_id=00e9c3e1f0"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_self"
+            novalidate="">
+            <div id="mc_embed_signup_scroll">
+              <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+
+              <div class="mc-field-group">
+                <label for="mce-EMAIL">Your Email <span class="asterisk">*</span></label>
+                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+              </div>
+
+              <div class="mc-field-group">
+                <label for="mce-FNAME">Your Name</label>
+                <input type="text" name="FNAME" class="text" id="mce-FNAME" value="">
+              </div>
+
+              <div id="mce-responses" class="clear foot">
+                <div class="response" id="mce-error-response" style="display:none;"></div>
+                <div class="response" id="mce-success-response" style="display:none;"></div>
+              </div>
+
+              <div aria-hidden="true" style="position:absolute; left:-5000px;">
+                <input type="text" name="b_3923cd34aa6706fb6e6e77d78_f2825af5ca" tabindex="-1" value="">
+              </div>
+
+              <div class="optionalParent">
+                <div class="clear foot">
+                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Join the List">
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container text-center">
+    <h2>Contact Us</h2>
+    <p>Questions, collaborations, or press inquiries? We’d love to hear from you.</p>
+
+    <div class="embed-card" style="max-width:720px;">
+      <p class="contact-note">Email us anytime:</p>
+      <a class="contact-email" href="mailto:hello@miniandmeartstudio.com">
+        hello@miniandmeartstudio.com
+      </a>
+      <p class="contact-small">We typically reply within 1–2 business days.</p>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ARCHIVE: Old class-based site content (PRESERVED)
+       ========================================================= -->
+
+  <!--
   <section id="expect" class="expect section">
     <h2>What to Expect</h2>
     <p>At a Mini &amp; Me class, you’ll find:</p>
-
     <div class="expect-grid">
       <div class="pill">Open-ended, process-based art</div>
       <div class="pill">Shared painting time for parent + little</div>
@@ -111,10 +296,8 @@
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
   <section class="section container text-center">
     <h2>How It Works</h2>
-
     <div class="steps-wrap">
       <div class="step">
         <h3>1) Waiver</h3>
@@ -131,10 +314,8 @@
     </div>
   </section>
 
-  <!-- CLASSES -->
   <section id="classes" class="section container">
     <h2 class="text-center">Our Classes</h2>
-
     <div class="classes">
       <div class="class-card">
         <h3>Parent + Me Painting</h3>
@@ -144,173 +325,146 @@
         <p>Open-ended guided painting. All materials provided. Parent participation required.</p>
         <p>Please complete the waiver for each child before booking your class.</p>
         <a href="https://form.jotform.com/260195919445163" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Complete Waiver</a>
-        <a href="https://bookwhen.com/minimeartstudio" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Book Now</a>
+        <a href="https://bookwhen.com/minimeartstudio" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"> Book Now </a>
       </div>
     </div>
   </section>
 
-  <!-- POLICIES -->
+  <section id="waiver" class="section container text-center">
+    <h2>Waiver</h2>
+    <p>Please complete the waiver for each child before booking your class.</p>
+
+    <div class="embed-card">
+      <h3 class="embed-title">Parent/Guardian Waiver</h3>
+      <iframe
+        src="https://form.jotform.com/260195919445163"
+        width="100%"
+        height="820"
+        frameborder="0"
+        style="border:0; border-radius:12px;"
+        scrolling="auto">
+      </iframe>
+
+      <div style="margin-top:18px;">
+        <a href="#booking" class="btn btn-primary">Continue to Booking →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="section container">
+    <div class="booking">
+      <h2>Reserve Your Spot</h2>
+      <p>Classes are intentionally small — book early!</p>
+
+      <div class="embed-card">
+        <h3 class="embed-title">Book a Class</h3>
+        <iframe
+          src="https://bookwhen.com/minimeartstudio/iframe"
+          style="width:100%; min-height:850px; border:0; border-radius:14px;"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
   <section id="policies" class="section container">
     <h2 class="text-center">Policies</h2>
-
     <div class="faq">
       <details class="faq-item">
         <summary>Supervision</summary>
         <p>A parent or guardian must stay and participate with their child (ages 2–5) for the entire class and supervise at all times.</p>
         <p>This is not a drop-off class.</p>
       </details>
-
       <details class="faq-item">
         <summary>Arrival</summary>
         <p>Please arrive 5–10 minutes early to get settled. Late arrivals may miss instructions and won’t extend class time.</p>
       </details>
-
       <details class="faq-item">
         <summary>Cancellation &amp; Credits</summary>
         <p>Classes are non-refundable. If you’re unable to attend, contact us as soon as possible — credits may be issued for illness or emergency when notice is given with at least 24 hours notice.</p>
         <p>No-shows or cancellations within 24 hours are not eligible for credit.</p>
       </details>
-
       <details class="faq-item">
         <summary>Illness</summary>
         <p>To help keep our community healthy:</p>
         <p>Please do not attend if you or your child has a fever, vomiting, diarrhea, or a contagious illness within the last 24 hours.</p>
         <p>If illness comes up unexpectedly, reach out as soon as possible.</p>
       </details>
-
       <details class="faq-item">
         <summary>Messy fun</summary>
         <p>We use washable, non-toxic materials, but paint can stain. Wear clothes you don’t mind getting messy — aprons are provided.</p>
       </details>
-
       <details class="faq-item">
         <summary>Photos &amp; videos</summary>
         <p>We may take occasional photos/videos for marketing. If you prefer not to be photographed, please let us know (and select “No” on the waiver if available).</p>
       </details>
-
       <details class="faq-item">
         <summary>Siblings</summary>
         <p>Each child must be registered.</p>
         <p>Sibling add-ons are available for select classes.</p>
         <p>Please note that each child must be supervised by an adult at all times.</p>
       </details>
-
       <details class="faq-item">
         <summary>Booking &amp; Payment</summary>
         <p>All classes must be booked and paid for in advance.</p>
         <p>Spots are limited to keep classes small and intentional.</p>
         <p>Your spot is reserved once payment is received.</p>
       </details>
-
       <details class="faq-item">
         <summary>Safety &amp; Supervision</summary>
         <p>Adults are responsible for their child’s safety and behavior at all times.</p>
         <p>Please help keep materials out of mouths and ensure respectful use of shared supplies.</p>
-        <p>Mini &amp; Me Art Studio is not liable for injuries that may occur during class.</p>
+        <p>Mini & Me Art Studio is not liable for injuries that may occur during class.</p>
       </details>
-
       <details class="faq-item">
         <summary>Weather &amp; Instructor Cancellations</summary>
-        <p>In the rare event that Mini &amp; Me must cancel a class, you will be offered a full refund or class credit.</p>
+        <p>In the rare event that Mini & Me must cancel a class, you will be offered a full refund or class credit.</p>
         <p>Weather-related decisions will be communicated via email and Instagram.</p>
       </details>
-
       <details class="faq-item">
         <summary>Respectful space</summary>
-        <p>Mini &amp; Me Art Studio is a warm, inclusive space.</p>
+        <p>Mini & Me Art Studio is a warm, inclusive space.</p>
         <p>Please be kind to other families, children, and the environment.</p>
         <p>We reserve the right to end a class early if behavior becomes unsafe or disruptive.</p>
       </details>
     </div>
   </section>
 
-  <!-- EMAIL (MAILCHIMP) -->
-  <section id="email" class="section container text-center">
-    <h2>Stay in Touch</h2>
-    <p>Get class drops, seasonal themes, and last-minute openings</p>
-
-    <div class="embed-card mc-theme" style="max-width:760px;">
-      <div id="mc_embed_shell">
-        <div id="mc_embed_signup">
-          <form action="https://gmail.us17.list-manage.com/subscribe/post?u=3923cd34aa6706fb6e6e77d78&amp;id=f2825af5ca&amp;f_id=00e9c3e1f0"
-                method="post"
-                id="mc-embedded-subscribe-form"
-                name="mc-embedded-subscribe-form"
-                class="validate"
-                target="_self"
-                novalidate="">
-            <div id="mc_embed_signup_scroll">
-              <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-
-              <div class="mc-field-group">
-                <label for="mce-EMAIL">Your Email <span class="asterisk">*</span></label>
-                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" />
-              </div>
-
-              <div class="mc-field-group">
-                <label for="mce-FNAME">Your Name</label>
-                <input type="text" name="FNAME" class="text" id="mce-FNAME" value="" />
-              </div>
-
-              <div id="mce-responses" class="clear foot">
-                <div class="response" id="mce-error-response" style="display:none;"></div>
-                <div class="response" id="mce-success-response" style="display:none;"></div>
-              </div>
-
-              <div aria-hidden="true" style="position:absolute; left:-5000px;">
-                <input type="text" name="b_3923cd34aa6706fb6e6e77d78_f2825af5ca" tabindex="-1" value="" />
-              </div>
-
-              <div class="optionalParent">
-                <div class="clear foot">
-                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Join the List" />
-                </div>
-              </div>
-
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section container text-center">
-    <h2>Contact Us</h2>
-    <p>Questions about classes, private sessions, or birthday celebrations? We’d love to hear from you.</p>
-
-    <div class="embed-card" style="max-width:720px;">
-      <p class="contact-note">Email us anytime:</p>
-      <a class="contact-email" href="mailto:hello@miniandmeartstudio.com">hello@miniandmeartstudio.com</a>
-      <p style="margin-top:14px; opacity:0.9;">We typically reply within 1–2 business days.</p>
-    </div>
-  </section>
+  <nav class="nav-links" aria-label="Legacy Links">
+    <a href="https://form.jotform.com/260195919445163" target="_blank" rel="noopener noreferrer">Waiver</a>
+    <a href="https://bookwhen.com/minimeartstudio" target="_blank" rel="noopener noreferrer">Booking</a>
+    <a href="https://a.co/d/0C9qWFD" target="_blank" rel="noopener noreferrer">Buy the Book</a>
+  </nav>
+  -->
 
   <!-- FOOTER -->
   <footer>
     <div class="footer-col">
       <h3>Mini &amp; Me Art Studio © 2026</h3>
-      <p>Tiny Hands, Big Creativity</p>
+      <p>Her freedom. My skill. Our art.</p>
     </div>
 
     <div class="footer-col">
-      <h3>Links</h3>
+      <h3>Explore</h3>
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#expect">What to Expect</a></li>
-        <li><a href="#classes">Classes</a></li>
-        <li><a href="https://form.jotform.com/260195919445163" target="_blank" rel="noopener noreferrer">Waiver</a></li>
-        <li><a href="https://bookwhen.com/minimeartstudio" target="_blank" rel="noopener noreferrer">Booking</a></li>
-        <li><a href="#policies">Policies</a></li>
+        <li><a href="#practice">Practice</a></li>
+        <li><a href="#materials">Materials</a></li>
+        <li><a href="/journal/">Studio Notes</a></li>
+        <li><a href="#shop">Shop</a></li>
         <li><a href="#email">Email List</a></li>
         <li><a href="#contact">Contact</a></li>
+
+        <!-- Buy the Book (Amazon) -->
+        <li><a href="https://a.co/d/0C9qWFD" target="_blank" rel="noopener noreferrer">Buy the Book</a></li>
       </ul>
     </div>
 
     <div class="footer-col">
       <h3>Follow Us</h3>
       <a href="https://www.instagram.com/miniandme.artstudio" target="_blank" rel="noopener noreferrer"
-         style="display:inline-flex; align-items:center; gap:8px; font-weight:800; font-family:'Quicksand',sans-serif;">
+         class="footer-ig">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 24 24">
           <path d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 1.5C5.96 3.5 3.5 5.96 3.5 7.75v8.5c0 1.79 2.46 4.25 4.25 4.25h8.5c1.79 0 4.25-2.46 4.25-4.25v-8.5c0-1.79-2.46-4.25-4.25-4.25h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
         </svg>
@@ -319,7 +473,10 @@
     </div>
   </footer>
 
-  <a class="float-book" href="https://bookwhen.com/minimeartstudio" target="_blank" rel="noopener noreferrer">Book Now</a>
+  <!-- Floating CTA: Studio Notes -->
+  <a class="float-book" href="/journal/">Read Studio Notes</a>
 
+  <!-- JS -->
+  <script src="main.js"></script>
 </body>
 </html>
