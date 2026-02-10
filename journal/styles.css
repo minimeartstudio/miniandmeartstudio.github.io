@@ -198,7 +198,14 @@ h1,h2{
   transform: translateY(-1px);
 }
 
-/* Instagram icon button */
+.nav-book{
+  background: rgba(201,122,93,0.10);
+}
+.nav-book:hover{
+  background: rgba(201,122,93,0.18);
+}
+
+/* Instagram icon in header */
 .ig-link{
   display:inline-flex;
   align-items:center;
@@ -211,7 +218,6 @@ h1,h2{
   transition: 0.25s ease;
   flex:0 0 auto;
 }
-
 .ig-link:hover{
   background: rgba(201,122,93,0.18);
   transform: translateY(-1px);
