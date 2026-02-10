@@ -342,6 +342,17 @@ ul{ list-style:none; padding-left:0; }
 
 .step h3{ margin-bottom:8px; }
 
+/* Sessions-specific CTA */
+.sessions .btn-secondary{
+  background: #ffffff;
+  color: var(--muted-sage);
+}
+
+.sessions .btn-secondary:hover{
+  background: rgba(255,255,255,0.85);
+  transform: translateY(-1px);
+}
+
 /* Embeds */
 .embed-card{
   background:#fff;
