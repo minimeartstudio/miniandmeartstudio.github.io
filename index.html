@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="top">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,13 +15,12 @@
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
 </head>
-  
+
 <body id="top">
 
-   <a href="#top" class="back-to-top" aria-label="Back to top">
-  ↑
-</a>
-  
+  <!-- Back to top button -->
+  <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+
   <!-- TOP NAV -->
   <header class="topnav">
     <div class="nav-inner">
@@ -32,14 +31,16 @@
         <span>Mini &amp; Me Art Studio</span>
       </a>
 
-      <!-- Updated navigation-->
+      <!-- Updated navigation -->
       <nav class="nav-links" aria-label="Site">
         <a href="#about" class="nav-cta">About</a>
         <a href="/materials/">Materials</a>
         <a href="/journal/">Studio Notes</a>
         <a href="#shop">Shop</a>
+        <a href="#sessions">Sessions</a>
         <a href="#email">Subscribe</a>
         <a href="#contact">Contact</a>
+      </nav>
 
       <!-- IG -->
       <a class="ig-link" href="https://www.instagram.com/miniandme.artstudio" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
@@ -47,6 +48,7 @@
           <path d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 1.5C5.96 3.5 3.5 5.96 3.5 7.75v8.5c0 1.79 2.46 4.25 4.25 4.25h8.5c1.79 0 4.25-2.46 4.25-4.25v-8.5c0-1.79-2.46-4.25-4.25-4.25h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
         </svg>
       </a>
+
     </div>
   </header>
 
@@ -57,7 +59,9 @@
     <img class="hero-logo" src="logo-transparent.png" alt="Mini & Me Art Studio logo">
 
     <p class="tagline">Her freedom. My skill. Our art.</p>
-    <p class="subline">Mini &amp; Me Art Studio is a shared creative practice — a place to slow down, explore materials, and make art side by side.</p>
+    <p class="subline">
+      Mini &amp; Me Art Studio is a shared creative practice — a place to slow down, explore materials, and make art side by side.
+    </p>
 
     <div class="cta-row">
       <a href="/materials/" class="btn btn-secondary">Materials We Love</a>
@@ -71,10 +75,10 @@
     <p>
       Mini &amp; Me Art Studio is a shared creative practice for parents and little ones.
       Art here isn’t about getting it right — it’s about making space to slow down, explore, and create side by side.
-      There are no expectations to perform. No pressure to create something perfect. 
-      Only space to explore, experiment, and make memories side by side. Because the moments matter more than the masterpiece.
+      There are no expectations to perform. No pressure to create something perfect.
+      Only space to explore, experiment, and make memories together. Because the moments matter more than the masterpiece.
     </p>
-  
+
     <div class="about-grid">
       <div class="about-card">
         <h3>Her freedom</h3>
@@ -82,20 +86,20 @@
       </div>
       <div class="about-card">
         <h3>My skill</h3>
-        <p>Editing, layering, composition, and quiet structure—without erasing her voice.</p>
+        <p>Editing, layering, and composition — without erasing her voice.</p>
       </div>
       <div class="about-card">
         <h3>Our art</h3>
-        <p>Collaborative pieces that feel alive—raw and refined, held together in conversation.</p>
+        <p>Collaborative pieces that feel alive — raw and refined, held together in conversation.</p>
       </div>
     </div>
 
     <h2 class="spacer-top">About the Owner</h2>
     <p>
-      Mini &amp; Me grew out of Laura’s own return to art through motherhood—learning to slow down, create again, and see the world through little eyes.
+      Mini &amp; Me grew out of Laura’s own return to art through motherhood — learning to slow down, create again, and see the world through little eyes.
       What began as making alongside her own child became a studio practice rooted in process, play, and presence.
-      She believes in process over perfection, in following a child’s lead, and in creating an environment where both parent and child can explore, 
-      make a mess, and simply be together. Mini & Me is about more than painting — it’s about shared moments, gentle guidance, and building memories through art.
+      She believes in following a child’s lead, and creating an environment where both parent and child can explore, make a mess, and simply be together.
+      Mini &amp; Me is about more than painting — it’s about shared moments and building memories through art.
     </p>
   </section>
 
@@ -103,8 +107,7 @@
   <section id="shop" class="section container text-center">
     <h2>Studio Shop</h2>
     <p class="max-text">
-      Collaborative works from our shared practice — small-batch prints and studio pieces.
-      (Launching soon.)
+      Collaborative works from our shared practice — small-batch prints and studio pieces. (Launching soon.)
     </p>
 
     <div class="cards">
@@ -128,41 +131,36 @@
     </div>
   </section>
 
-<!-- SESSIONS -->
-  <section id="shop" class="section container text-center">
-  <h2>Parent + Mini Sessions</h2>
+  <!-- SESSIONS (cohesive with Shop) -->
+  <section id="sessions" class="section container text-center sessions">
+    <h2>Parent + Mini Sessions</h2>
 
-  <div class="steps-wrap">
-    <div class="step">
-      <h3>1) Waiver</h3>
-      <p>Complete the waiver once per child.</p>
+    <p class="max-text">
+      Occasional in-person sessions designed for shared making — simple steps, gentle guidance, and lots of room to explore.
+      Join the list to be the first to hear when dates open.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>1) Waiver</h3>
+        <p>Complete the waiver once per child.</p>
+      </div>
+
+      <div class="card">
+        <h3>2) Book</h3>
+        <p>Select your session time and reserve your spot.</p>
+      </div>
+
+      <div class="card">
+        <h3>3) Paint &amp; Play</h3>
+        <p>Enjoy guided, open-ended painting together.</p>
+      </div>
     </div>
 
-    <div class="step">
-      <h3>2) Book</h3>
-      <p>Select your session time and reserve your spot.</p>
+    <div class="mini-row mini-row-tight">
+      <a href="#email" class="btn btn-secondary">Get updates for upcoming sessions</a>
     </div>
-
-    <div class="step">
-      <h3>3) Paint &amp; Play</h3>
-      <p>Enjoy guided, open-ended painting together.</p>
-    </div>
-  </div>
-
-  <!-- Optional future offerings
-  <div class="mini-row">
-    <div class="mini-pill">Workshops</div>
-    <div class="mini-pill">Parent–Child Sessions</div>
-    <div class="mini-pill">Exhibitions</div>
-    <div class="mini-pill">Studio Gatherings</div>
-  </div>
-  -->
-
-  <div class="mini-row mini-row-tight">
-    <a href="#email" class="btn btn-secondary">Get updates for upcoming sessions</a>
-  </div>
-</section>
-
+  </section>
 
   <!-- EMAIL (MAILCHIMP) -->
   <section id="email" class="section container text-center">
@@ -227,6 +225,44 @@
       <p class="contact-small">We typically reply within 1–2 business days.</p>
     </div>
   </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-col">
+      <h3>Mini &amp; Me Art Studio © 2026</h3>
+      <p>Her freedom. My skill. Our art.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="/materials/">Materials</a></li>
+        <li><a href="/journal/">Studio Notes</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#sessions">Sessions</a></li>
+        <li><a href="#email">Subscribe</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://a.co/d/0C9qWFD" target="_blank" rel="noopener noreferrer">Buy the Book</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+      <a href="https://www.instagram.com/miniandme.artstudio" target="_blank" rel="noopener noreferrer" class="footer-ig">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 24 24">
+          <path d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 1.5C5.96 3.5 3.5 5.96 3.5 7.75v8.5c0 1.79 2.46 4.25 4.25 4.25h8.5c1.79 0 4.25-2.46 4.25-4.25v-8.5c0-1.79-2.46-4.25-4.25-4.25h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg>
+        @miniandme.artstudio
+      </a>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="main.js"></script>
+</body>
+</html>
+
 
   <!-- =========================================================
        ARCHIVE: Old class-based site content (PRESERVED)
@@ -388,45 +424,5 @@
   </nav>
   -->
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-col">
-      <h3>Mini &amp; Me Art Studio © 2026</h3>
-      <p>Her freedom. My skill. Our art.</p>
-    </div>
-
-    <div class="footer-col">
-      <h3>Explore</h3>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#practice">Practice</a></li>
-        <li><a href="/materials/">Materials</a></li>
-        <li><a href="/journal/">Studio Notes</a></li>
-        <li><a href="#shop">Shop</a></li>
-        <li><a href="#email">Subscribe</a></li>
-        <li><a href="#contact">Contact</a></li>
-
-        <!-- Buy the Book (Amazon) -->
-        <li><a href="https://a.co/d/0C9qWFD" target="_blank" rel="noopener noreferrer">Buy the Book</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-col">
-      <h3>Follow Us</h3>
-      <a href="https://www.instagram.com/miniandme.artstudio" target="_blank" rel="noopener noreferrer"
-         class="footer-ig">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" viewBox="0 0 24 24">
-          <path d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 1.5C5.96 3.5 3.5 5.96 3.5 7.75v8.5c0 1.79 2.46 4.25 4.25 4.25h8.5c1.79 0 4.25-2.46 4.25-4.25v-8.5c0-1.79-2.46-4.25-4.25-4.25h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-        </svg>
-        @miniandme.artstudio
-      </a>
-    </div>
-  </footer>
-
   <!-- Floating CTA: Studio Notes 
   <a class="float-book" href="/journal/">Read Studio Notes</a> -->
-
-  <!-- JS -->
-  <script src="main.js"></script>
-</body>
-</html>
