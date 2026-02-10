@@ -53,6 +53,13 @@ h1,h2,h3{
   color:#fff !important;
 }
 
+.nav-book{
+  background: rgba(201,122,93,0.10);
+}
+.nav-book:hover{
+  background: rgba(201,122,93,0.18);
+}
+
 /* HERO */
 .page-hero{
   text-align:center;
