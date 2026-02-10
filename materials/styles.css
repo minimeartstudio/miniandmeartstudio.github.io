@@ -211,3 +211,28 @@ h1,h2,h3{
   pointer-events: auto;
   transform: translateY(0);
 }
+
+.nav-book{
+  background: rgba(201,122,93,0.10);
+}
+.nav-book:hover{
+  background: rgba(201,122,93,0.18);
+}
+
+/* Instagram icon in header */
+.ig-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:38px;
+  height:38px;
+  border-radius:12px;
+  color: var(--clay);
+  background: rgba(201,122,93,0.10);
+  transition: 0.25s ease;
+  flex:0 0 auto;
+}
+.ig-link:hover{
+  background: rgba(201,122,93,0.18);
+  transform: translateY(-1px);
+}
