@@ -187,19 +187,6 @@ h1,h2{
 
 .nav-book{
   background: rgba(201,122,93,0.10);
-  border: 1px solid rgba(201,122,93,0.18);
-  color: var(--clay) !important;
-  font-weight: 900;
-  font-family:'Quicksand', sans-serif;
-}
-
-.nav-book:hover{
-  background: rgba(201,122,93,0.18);
-  transform: translateY(-1px);
-}
-
-.nav-book{
-  background: rgba(201,122,93,0.10);
 }
 .nav-book:hover{
   background: rgba(201,122,93,0.18);
