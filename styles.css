@@ -349,7 +349,7 @@ ul{ list-style:none; padding-left:0; }
 }
 
 .sessions .btn-secondary:hover{
-  background: rgba(255,255,255,0.85);
+  background: var(--dusty-sky);
   transform: translateY(-1px);
 }
 
