@@ -26,10 +26,10 @@ h1,h2{
 
 .container{ max-width:1000px; margin:0 auto; padding:50px 20px; }
 
-/* NAV (lightweight match to your home) */
+/* TOP NAV */
 .topnav{
   position:sticky; top:0; z-index:999;
-  background:rgba(255,246,238,0.92);
+  background:rgba(255,246,238,0.90);
   backdrop-filter:blur(10px);
   border-bottom:1px solid rgba(0,0,0,0.06);
   transition: box-shadow 0.25s ease, background 0.25s ease;
@@ -37,10 +37,26 @@ h1,h2{
 .nav-inner{
   max-width:1200px; margin:0 auto; padding:12px 20px;
   display:flex; align-items:center; justify-content:space-between; gap:16px;
+  transition: padding 0.25s ease;
 }
-.brand{ display:flex; align-items:center; gap:10px; color:var(--clay); }
-.logo-lockup img{ height:34px; width:auto; }
-.logo-lockup span{ font-weight:800; }
+
+/* Brand lockup */
+.brand{
+  display:flex; align-items:center; gap:10px;
+  color:var(--clay);
+  line-height:1;
+}
+.logo-lockup img{
+  height:34px; width:auto;
+  filter: drop-shadow(0 10px 18px rgba(0,0,0,0.08));
+  transition: transform 0.25s ease;
+}
+.logo-lockup span{
+  font-family:'Nordeco','Cormorant Garamond','Georgia',serif;
+  font-weight:800;
+  letter-spacing:0.3px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
 
 .nav-links{
   display:flex; align-items:center; gap:10px; flex-wrap:wrap;
@@ -49,10 +65,50 @@ h1,h2{
 }
 .nav-links a{ padding:8px 10px; border-radius:10px; }
 .nav-links a:hover{ background:rgba(201,122,93,0.10); }
+
 .nav-cta{
   background:var(--clay);
   color:#fff !important;
+  box-shadow:0 10px 18px rgba(0,0,0,0.12);
 }
+.nav-cta:hover{
+  background:var(--soft-blush);
+  box-shadow:0 14px 26px rgba(0,0,0,0.16);
+}
+
+.nav-book{
+  background: rgba(201,122,93,0.10);
+}
+.nav-book:hover{
+  background: rgba(201,122,93,0.18);
+}
+
+/* Instagram icon in header */
+.ig-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:38px;
+  height:38px;
+  border-radius:12px;
+  color: var(--clay);
+  background: rgba(201,122,93,0.10);
+  transition: 0.25s ease;
+  flex:0 0 auto;
+}
+.ig-link:hover{
+  background: rgba(201,122,93,0.18);
+  transform: translateY(-1px);
+}
+
+/* Nav shrink on scroll */
+.topnav.scrolled{
+  background: rgba(255,246,238,0.96);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.10);
+}
+.topnav.scrolled .nav-inner{ padding:10px 20px; }
+.topnav.scrolled .logo-lockup img{ transform: scale(0.92); }
+.topnav.scrolled .logo-lockup span{ transform: translateY(-1px); }
 
 /* HERO */
 .page-hero{
@@ -181,31 +237,3 @@ h1,h2{
   font-weight: 900;
 }
 
-/* ===============================
-   NAV EXTRAS (Book button + IG)
-   =============================== */
-
-.nav-book{
-  background: rgba(201,122,93,0.10);
-}
-.nav-book:hover{
-  background: rgba(201,122,93,0.18);
-}
-
-/* Instagram icon in header */
-.ig-link{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  width:38px;
-  height:38px;
-  border-radius:12px;
-  color: var(--clay);
-  background: rgba(201,122,93,0.10);
-  transition: 0.25s ease;
-  flex:0 0 auto;
-}
-.ig-link:hover{
-  background: rgba(201,122,93,0.18);
-  transform: translateY(-1px);
-}
