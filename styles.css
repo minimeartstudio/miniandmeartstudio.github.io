@@ -308,8 +308,6 @@ ul{ list-style:none; padding-left:0; }
 
     /* STEPS */
     .steps-wrap{
-    background: var(--dusty-sky);
-  color:#fff;
       display:flex;
       flex-wrap:wrap;
       justify-content:space-around;
