@@ -1,12 +1,15 @@
 (function () {
-  const header = document.querySelector(".topnav");
-  if (!header) return;
+  const backToTop = document.querySelector(".back-to-top");
+  if (!backToTop) return;
 
-  const onScroll = () => {
-    if (window.scrollY > 18) header.classList.add("scrolled");
-    else header.classList.remove("scrolled");
+  const toggleButton = () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.add("show");
+    } else {
+      backToTop.classList.remove("show");
+    }
   };
 
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
+  window.addEventListener("scroll", toggleButton, { passive: true });
+  toggleButton();
 })();
