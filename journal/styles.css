@@ -106,3 +106,77 @@ h1,h2{
   margin-top:10px;
 }
 
+/* ===============================
+   STUDIO NOTES — POST STYLING
+   =============================== */
+
+.post{
+  max-width: 720px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.post h1{
+  font-size: 2.2rem;
+  color: var(--clay);
+  margin-bottom: 10px;
+}
+
+.post h2{
+  font-size: 1.4rem;
+  color: var(--clay);
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+.post p{
+  margin-top: 14px;
+  font-size: 1.05rem;
+}
+
+.post ul{
+  margin-top: 12px;
+  padding-left: 18px;
+}
+
+.post li{
+  margin-bottom: 8px;
+}
+
+.post .meta{
+  font-family:'Quicksand', sans-serif;
+  font-weight: 800;
+  opacity: 0.75;
+  font-size: 0.9rem;
+  margin-bottom: 18px;
+}
+
+.post a{
+  color: var(--clay);
+  font-weight: 700;
+}
+
+.post a:hover{
+  text-decoration: underline;
+}
+
+/* Soft divider between sections (optional) */
+.post hr{
+  border: none;
+  height: 1px;
+  background: rgba(0,0,0,0.08);
+  margin: 32px 0;
+}
+
+/* Inline callout cards inside posts */
+.post .post-card{
+  margin-top: 18px;
+}
+
+/* Back link */
+.post .back-link{
+  display: inline-block;
+  margin-top: 28px;
+  font-family:'Quicksand', sans-serif;
+  font-weight: 900;
+}
