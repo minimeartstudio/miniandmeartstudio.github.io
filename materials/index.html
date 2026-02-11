@@ -1,232 +1,64 @@
-<!DOCTYPE html>
-<html lang="en" id="top">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Materials | Mini & Me Art Studio</title>
+/* Quiet section nav (replaces pills) */
+.section-nav{
+  max-width:1100px;
+  margin: 10px auto 26px;
+  padding: 0 20px;
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+  justify-content:center;
+  font-family:'Quicksand', sans-serif;
+  font-weight:900;
+}
+.section-nav a{
+  color:var(--clay);
+  opacity:0.9;
+  border-bottom:1px solid rgba(201,122,93,0.25);
+  padding-bottom:2px;
+}
+.section-nav a:hover{
+  opacity:1;
+  border-bottom-color: rgba(201,122,93,0.7);
+}
 
-  <link rel="icon" href="../favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+/* Option A: “Shop links” dropdown */
+.shop-links{ margin-top:14px; }
+.shop-links summary{
+  cursor:pointer;
+  list-style:none;
+  font-family:'Quicksand', sans-serif;
+  font-weight:900;
+  color:var(--clay);
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  opacity:0.92;
+}
+.shop-links summary::-webkit-details-marker{ display:none; }
+.shop-links summary::after{
+  content:"→";
+  opacity:0.75;
+  transition: transform .2s ease;
+}
+.shop-links[open] summary::after{ transform: translateX(3px); }
 
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="/styles.css">
-<link rel="stylesheet" href="/materials/materials.css">
-</head>
+.shop-links__list{
+  margin-top:10px;
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+.shop-links__list a{
+  font-family:'Quicksand', sans-serif;
+  font-weight:900;
+  color:var(--clay);
+  border-bottom:1px solid rgba(201,122,93,0.35);
+  padding-bottom:2px;
+}
+.shop-links__list a:hover{
+  border-bottom-color: rgba(201,122,93,0.75);
+}
 
-<body id="top">
-
-  <!-- Back to top button -->
-  <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
-
-  <!-- TOP NAV -->
-  <div id="site-header"></div>
-
-  <section class="page-hero">
-    <h1>Materials We Love</h1>
-    <p>
-      A curated library of supplies we actually return to—chosen for openness, tactility, and repeatability.
-      Start simple. Build slowly.
-    </p>
-    <p class="small-note">
-      Some links may be affiliate links. If you purchase through them, it supports our studio at no extra cost to you.
-    </p>
-  </section>
-
-  <main class="container">
-
-    <div class="filters">
-      <a class="filter-pill" href="#paper">Surface</a>
-      <a class="filter-pill" href="#paint">Paint</a>
-      <a class="filter-pill" href="#dry">Dry Materials</a>
-      <a class="filter-pill" href="#tools">Tools</a>
-      <a class="filter-pill" href="#setup">Set-Up</a>
-      <a class="filter-pill" href="#clean">Clean-Up</a>
-    </div>
-
-<!-- Surface -->
-<section id="paper" class="section-block">
-  <h2>Surface</h2>
-  <p class="hint">Big surfaces invite big gestures. This is where we start.</p>
-
-  <div class="cards">
-
-    <div class="item-card">
-      <h3>Roll Paper (Table Covering)</h3>
-      <p class="meta">Daily use • Ages 2–5+</p>
-      <p class="excerpt">Pull, tape, begin. Removes preciousness fast.</p>
-
-      <div class="item-actions">
-        <div class="item-links">
-          <a href="https://www.amazon.com/dp/YOUR-LINK" target="_blank" rel="noopener noreferrer">Amazon</a>
-          <a href="https://www.dickblick.com/YOUR-LINK" target="_blank" rel="noopener noreferrer">Blick</a>
-          <a href="https://www.michaels.com/YOUR-LINK" target="_blank" rel="noopener noreferrer">Michaels</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="item-card">
-      <h3>Heavyweight Sketch Pad</h3>
-      <p class="meta">Quick sessions</p>
-      <p class="excerpt">For when you want art time without the full setup.</p>
-
-      <div class="item-actions">
-        <div class="item-links">
-          <a href="https://www.amazon.com/dp/YOUR-LINK" target="_blank" rel="noopener noreferrer">Amazon</a>
-          <a href="https://www.dickblick.com/YOUR-LINK" target="_blank" rel="noopener noreferrer">Blick</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="item-card">
-      <h3>Pre-Stretched Canvas (16” x 20”)</h3>
-      <p class="meta">Elevated option • Studio-ready</p>
-      <p class="excerpt">
-        When you want the work to feel lasting. Canvas holds layers beautifully —
-        especially when you’re responding over time.
-      </p>
-
-      <div class="item-actions">
-        <div class="item-links">
-          <a href="https://www.amazon.com/dp/YOUR-LINK" target="_blank" rel="noopener noreferrer">Amazon</a>
-          <a href="https://www.dickblick.com/YOUR-LINK" target="_blank" rel="noopener noreferrer">Blick</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-    <!-- PAINT -->
-    <section id="paint" class="section-block">
-      <h2>Paint</h2>
-      <p class="hint">Keep the palette limited. Two colors + white goes a long way.</p>
-
-      <div class="cards">
-        <a class="item-card" href="#" target="_blank" rel="noopener noreferrer">
-          <h3>Washable tempera / washable gouache</h3>
-          <p class="meta">Toddler-friendly</p>
-          <p class="excerpt">Forgiving, mixable, easy to return to.</p>
-          <span class="linktext">Link →</span>
-        </a>
-
-        <a class="item-card" href="#" target="_blank" rel="noopener noreferrer">
-          <h3>Acrylic (adult layer)</h3>
-          <p class="meta">Parent add-on</p>
-          <p class="excerpt">For linework, shapes, or a quiet compositional response.</p>
-          <span class="linktext">Link →</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- DRY -->
-    <section id="dry" class="section-block">
-      <h2>Dry Materials</h2>
-      <p class="hint">Dry tools make consistency possible. Five minutes counts.</p>
-
-      <div class="cards">
-        <a class="item-card" href="#" target="_blank" rel="noopener noreferrer">
-          <h3>Chunky crayons / oil pastels</h3>
-          <p class="meta">Best everyday option</p>
-          <p class="excerpt">Fast gratification. Great pressure variation.</p>
-          <span class="linktext">Link →</span>
-        </a>
-
-        <a class="item-card" href="#" target="_blank" rel="noopener noreferrer">
-          <h3>Washable markers (small set)</h3>
-          <p class="meta">Keep it limited</p>
-          <p class="excerpt">Choose a restrained palette so the work stays cohesive.</p>
-          <span class="linktext">Link →</span>
-        </a>
-
-        <a class="item-card" href="#" target="_blank" rel="noopener noreferrer">
-          <h3>Tempera sticks</h3>
-          <p class="meta">Low-mess “paint”</p>
-          <p class="excerpt">A solid paint option when you want color without puddles.</p>
-          <span class="linktext">Link →</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- TOOLS -->
-    <section id="tools" class="section-block">
-      <h2>Tools</h2>
-      <p class="hint">Choose tools that translate movement into marks.</p>
-
-      <div class="cards">
-        <a class="item-card" href="#" target="_blank" rel="noopener noreferrer">
-          <h3>Wide brushes (1–2 sizes)</h3>
-          <p class="meta">Gesture-first</p>
-          <p class="excerpt">Wide tools prevent over-detailing and encourage flow.</p>
-          <span class="linktext">Link →</span>
-        </a>
-
-        <a class="item-card" href="#" target="_blank" rel="noopener noreferrer">
-          <h3>Mini roller</h3>
-          <p class="meta">Optional, satisfying</p>
-          <p class="excerpt">Great for big color fields and fast coverage.</p>
-          <span class="linktext">Link →</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- SETUP -->
-    <section id="setup" class="section-block">
-      <h2>Set-Up Essentials</h2>
-      <p class="hint">The boring pieces are what make it sustainable.</p>
-
-      <div class="cards">
-        <a class="item-card" href="#" target="_blank" rel="noopener noreferrer">
-          <h3>Painter’s tape</h3>
-          <p class="meta">Non-negotiable</p>
-          <p class="excerpt">Anchors paper, makes “clean edges,” reduces frustration.</p>
-          <span class="linktext">Link →</span>
-        </a>
-
-        <a class="item-card" href="#" target="_blank" rel="noopener noreferrer">
-          <h3>Palette (or a simple plate)</h3>
-          <p class="meta">Keep it easy</p>
-          <p class="excerpt">A small mixing space encourages limited palettes.</p>
-          <span class="linktext">Link →</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- CLEAN -->
-    <section id="clean" class="section-block">
-      <h2>Clean-Up</h2>
-      <p class="hint">Clean-up can be part of the ritual, not the punishment.</p>
-
-      <div class="cards">
-        <a class="item-card" href="#" target="_blank" rel="noopener noreferrer">
-          <h3>Reusable cloths</h3>
-          <p class="meta">Better than paper towels</p>
-          <p class="excerpt">One for hands, one for table, one for “it’s fine.”</p>
-          <span class="linktext">Link →</span>
-        </a>
-
-        <a class="item-card" href="#" target="_blank" rel="noopener noreferrer">
-          <h3>Apron / smock</h3>
-          <p class="meta">Freedom helper</p>
-          <p class="excerpt">Less “don’t touch that,” more yes.</p>
-          <span class="linktext">Link →</span>
-        </a>
-      </div>
-    </section>
-
-    <section class="cta-strip">
-      <h2>Want the simplest place to start?</h2>
-      <p>Try the 10-minute setup and come back to this library as you grow your kit.</p>
-      <a class="btn btn-primary" href="../journal/ten-minute-setup/">Read: The 10-Minute Table Setup →</a>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <p>Mini &amp; Me Art Studio © 2026</p>
-    <a href="../index.html">Back to Home →</a>
-  </footer>
-
-  <script src="/main.js"></script>
-</body>
-</html>
+/* If you still have pill styles in this file, remove them:
+   .filters, .filter-pill, .filter-pill:hover
+*/
