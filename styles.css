@@ -53,7 +53,7 @@ ul{ list-style:none; padding-left:0; }
   box-shadow: 0 10px 22px rgba(0,0,0,0.10);
 }
 .btn-primary{ background:var(--clay); color:#fff; }
-.btn-primary:hover{ background:var(--clay); transform:translateY(-1px); box-shadow:0 14px 30px rgba(0,0,0,0.14); }
+.btn-primary:hover{ background:var(--soft-blush); transform:translateY(-1px); box-shadow:0 14px 30px rgba(0,0,0,0.14); }
 .btn-secondary{ background:var(--muted-sage); color:#fff; }
 .btn-secondary:hover{ background:var(--dusty-sky); transform:translateY(-1px); box-shadow:0 14px 30px rgba(0,0,0,0.14); }
 
