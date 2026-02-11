@@ -43,3 +43,25 @@
 .sessions-block:first-of-type{
   border-top:none;
 }
+
+    /* FAQ / POLICIES */
+    .faq{ max-width:900px; margin:0 auto; }
+    .faq-item{
+      margin-bottom:15px;
+      background:#fff;
+      border-radius:14px;
+      padding:14px 16px;
+      box-shadow:0 3px 10px rgba(0,0,0,0.05);
+      transition:transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .faq-item:hover{
+      transform:translateY(-2px);
+      box-shadow:0 10px 22px rgba(0,0,0,0.10);
+    }
+    .faq-item summary{
+      font-weight:800;
+      cursor:pointer;
+      color:var(--clay);
+      font-family:'Quicksand', sans-serif;
+    }
+    .faq-item p{ margin-top:10px; }
