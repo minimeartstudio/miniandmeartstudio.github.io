@@ -1,5 +1,5 @@
 :root{
-  --warm-cream:#FFF6EE;
+  --warm-cream:#F7F5ED;
   --soft-blush:#F2B6A0;
   --muted-sage:#9DB8A0;
   --dusty-sky:#AFC6D9;
@@ -118,25 +118,29 @@ h1,h2,h3{
   font-weight:700;
 }
 
-/* FILTER PILLS */
-.filters{
+/* =========================================================
+   ELEVATED SECTION NAV (replaces pills)
+   ========================================================= */
+.section-nav{
+  max-width:1100px;
+  margin: 10px auto 26px;
+  padding: 0 20px;
   display:flex;
-  gap:10px;
+  gap:14px;
   flex-wrap:wrap;
   justify-content:center;
-  margin:12px 0 28px;
-}
-.filter-pill{
-  padding:10px 12px;
-  border-radius:999px;
-  background:rgba(201,122,93,0.10);
   font-family:'Quicksand', sans-serif;
-  font-weight:800;
-  transition:0.2s ease;
+  font-weight:900;
 }
-.filter-pill:hover{
-  background:rgba(201,122,93,0.18);
-  transform:translateY(-1px);
+.section-nav a{
+  color:var(--clay);
+  opacity:0.9;
+  border-bottom:1px solid rgba(201,122,93,0.25);
+  padding-bottom:2px;
+}
+.section-nav a:hover{
+  opacity:1;
+  border-bottom-color: rgba(201,122,93,0.7);
 }
 
 /* SECTIONS */
@@ -169,6 +173,7 @@ h1,h2,h3{
   box-shadow:0 14px 26px rgba(0,0,0,0.14);
 }
 .item-card h3{ color:var(--clay); font-size:1.2rem; margin-bottom:6px; }
+
 .meta{
   font-family:'Quicksand', sans-serif;
   font-weight:800;
@@ -177,70 +182,50 @@ h1,h2,h3{
   margin-bottom:10px;
 }
 
-.item-actions{
-  margin-top:14px;
-  display:flex;
-  justify-content:flex-start;
-}
+.excerpt{ opacity:0.95; }
 
-.item-links{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-}
+/* =========================================================
+   OPTION A: Calm “Shop links” dropdown
+   ========================================================= */
+.shop-links{ margin-top:14px; }
 
-.item-links a{
+.shop-links summary{
+  cursor:pointer;
+  list-style:none;
+  font-family:'Quicksand', sans-serif;
+  font-weight:900;
+  color:var(--clay);
   display:inline-flex;
   align-items:center;
-  justify-content:center;
-  padding:8px 12px;
-  border-radius:999px;
-  font-family:'Quicksand', sans-serif;
-  font-weight:900;
-  font-size:0.92rem;
-  color:var(--clay);
-  background:rgba(201,122,93,0.10);
-  border:1px solid rgba(201,122,93,0.18);
-  transition:transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  gap:10px;
+  opacity:0.92;
 }
+.shop-links summary::-webkit-details-marker{ display:none; }
 
-.item-links a:hover{
-  background:rgba(201,122,93,0.18);
-  transform:translateY(-1px);
-  box-shadow:0 10px 18px rgba(0,0,0,0.08);
+.shop-links summary::after{
+  content:"→";
+  opacity:0.75;
+  transition: transform .2s ease;
 }
+.shop-links[open] summary::after{ transform: translateX(3px); }
 
-
-.excerpt{ opacity:0.95; }
-.linktext{
-  display:inline-block;
-  margin-top:12px;
-  color:var(--clay);
-  font-family:'Quicksand', sans-serif;
-  font-weight:900;
-}
-
-.item-links{
-  margin-top:14px;
+.shop-links__list{
+  margin-top:10px;
   display:flex;
   gap:14px;
   flex-wrap:wrap;
 }
 
-.item-links a{
+.shop-links__list a{
   font-family:'Quicksand', sans-serif;
-  font-weight:800;
-  font-size:0.9rem;
+  font-weight:900;
   color:var(--clay);
-  border-bottom:1px solid rgba(201,122,93,0.3);
-  transition:0.2s ease;
+  border-bottom:1px solid rgba(201,122,93,0.35);
+  padding-bottom:2px;
 }
-
-.item-links a:hover{
-  border-bottom:1px solid var(--clay);
-  transform:translateY(-1px);
+.shop-links__list a:hover{
+  border-bottom-color: rgba(201,122,93,0.75);
 }
-
 
 /* CTA STRIP */
 .cta-strip{
@@ -281,10 +266,7 @@ h1,h2,h3{
   margin-top:10px;
 }
 
-/* ===============================
-   BACK TO TOP BUTTON
-   =============================== */
-
+/* BACK TO TOP BUTTON */
 .back-to-top{
   position: fixed;
   bottom: 22px;
@@ -300,30 +282,19 @@ h1,h2,h3{
   font-size: 20px;
   font-weight: 900;
   text-decoration: none;
-  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+  box-shadow:0 10px 22px rgba(0,0,0,0.18);
   opacity: 0;
   pointer-events: none;
   transform: translateY(6px);
   transition: opacity 0.25s ease, transform 0.25s ease, background 0.25s ease;
   z-index: 999;
 }
-
 .back-to-top:hover{
   background: var(--soft-blush);
   transform: translateY(2px);
 }
-
 .back-to-top.show{
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
-
-.nav-book{
-  background: rgba(201,122,93,0.10);
-}
-.nav-book:hover{
-  background: rgba(201,122,93,0.18);
-}
-
-
