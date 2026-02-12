@@ -1,121 +1,147 @@
-:root{
-  --warm-cream:#F7F5ED;
-  --soft-blush:#F2B6A0;
-  --muted-sage:#456153;
-  --dusty-sky:#a1bcb8;
-  --clay:#C97A5D;
-  --text:#333;
-}
-/* HERO */
+/* ===============================
+   STUDIO NOTES (journal.css)
+   =============================== */
+
+/* Hero (Studio Notes index) */
 .page-hero{
   text-align:center;
   padding:70px 20px 40px;
 }
-.page-hero h1{ font-size:2.4rem; color:var(--clay); }
-.page-hero p{ max-width:720px; margin:12px auto 0; font-size:1.1rem; }
+.page-hero h1{
+  font-size:2.4rem;
+  color:var(--clay);
+}
+.page-hero p{
+  max-width:720px;
+  margin:12px auto 0;
+  font-size:1.1rem;
+}
 
-/* POSTS GRID */
+/* Posts grid (Studio Notes index) */
 .posts{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
-  gap:18px;
+  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+  gap:16px;
   margin-top:18px;
 }
 
+/* Post cards (index + callouts) */
 .post-card{
   background:#fff;
-  border-radius:16px;
+  border-radius:18px;
   padding:20px;
   box-shadow:0 6px 14px rgba(0,0,0,0.10);
-  transition:transform 0.2s ease, box-shadow 0.2s ease;
+  transition:transform .2s ease, box-shadow .2s ease;
   display:block;
 }
 .post-card:hover{
-  transform:translateY(-3px);
+  transform:translateY(-2px);
   box-shadow:0 14px 26px rgba(0,0,0,0.14);
 }
-.post-card h2{ color:var(--clay); margin-bottom:8px; font-size:1.3rem; }
-.meta{
+.post-card h2{
+  color:var(--clay);
+  margin-bottom:8px;
+  font-size:1.3rem;
+}
+.post-card .meta{
   font-family:'Quicksand', sans-serif;
-  font-weight:800;
-  opacity:0.8;
+  font-weight:900;
+  opacity:0.78;
   margin-bottom:10px;
   font-size:0.92rem;
 }
-.excerpt{ opacity:0.95; }
+.post-card .excerpt{
+  opacity:0.95;
+}
 
 /* ===============================
-   STUDIO NOTES — POST STYLING
+   Individual post page (.post)
    =============================== */
 
 .post{
-  max-width: 720px;
-  margin: 0 auto;
-  padding-bottom: 40px;
+  max-width:760px;
+  margin:0 auto;
+  padding: 10px 0 44px;
 }
 
 .post h1{
-  font-size: 2.2rem;
-  color: var(--clay);
-  margin-bottom: 10px;
-}
-
-.post h2{
-  font-size: 1.4rem;
-  color: var(--clay);
-  margin-top: 28px;
-  margin-bottom: 10px;
-}
-
-.post p{
-  margin-top: 14px;
-  font-size: 1.05rem;
-}
-
-.post ul{
-  margin-top: 12px;
-  padding-left: 18px;
-}
-
-.post li{
-  margin-bottom: 8px;
+  font-size:2.2rem;
+  color:var(--clay);
+  margin-bottom:10px;
 }
 
 .post .meta{
   font-family:'Quicksand', sans-serif;
-  font-weight: 800;
-  opacity: 0.75;
-  font-size: 0.9rem;
-  margin-bottom: 18px;
+  font-weight:900;
+  opacity:0.75;
+  font-size:0.92rem;
+  margin-bottom:18px;
 }
 
+.post h2{
+  font-size:1.45rem;
+  color:var(--clay);
+  margin-top:28px;
+  margin-bottom:10px;
+}
+
+.post p{
+  margin-top:14px;
+  font-size:1.05rem;
+}
+
+.post ul{
+  margin-top:12px;
+  padding-left:18px;
+  list-style:disc;
+}
+
+.post li{
+  margin-bottom:8px;
+}
+
+/* Links inside posts */
 .post a{
-  color: var(--clay);
-  font-weight: 700;
+  color:var(--clay);
+  font-weight:800;
+  border-bottom:1px solid rgba(201,122,93,0.25);
+  padding-bottom:1px;
+  transition:border-color .2s ease, opacity .2s ease;
 }
-
 .post a:hover{
-  text-decoration: underline;
+  border-bottom-color: rgba(201,122,93,0.7);
+  opacity:1;
 }
 
-/* Soft divider between sections (optional) */
+/* Divider */
 .post hr{
-  border: none;
-  height: 1px;
-  background: rgba(0,0,0,0.08);
-  margin: 32px 0;
+  border:none;
+  height:1px;
+  background:rgba(0,0,0,0.08);
+  margin:32px 0;
 }
 
-/* Inline callout cards inside posts */
+/* Inline callout cards inside a post */
 .post .post-card{
-  margin-top: 18px;
+  margin-top:18px;
 }
 
 /* Back link */
 .post .back-link{
-  display: inline-block;
-  margin-top: 28px;
+  display:inline-block;
+  margin-top:28px;
   font-family:'Quicksand', sans-serif;
-  font-weight: 900;
+  font-weight:900;
+  border-bottom:1px solid rgba(201,122,93,0.25);
+  padding-bottom:2px;
+}
+.post .back-link:hover{
+  border-bottom-color: rgba(201,122,93,0.7);
 }
 
+/* Mobile */
+@media (max-width: 520px){
+  .page-hero h1{ font-size:2.05rem; }
+  .page-hero p{ font-size:1.02rem; }
+  .post{ padding-bottom:38px; }
+}
