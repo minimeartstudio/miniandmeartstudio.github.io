@@ -6,26 +6,6 @@
   --clay:#C97A5D;
   --text:#333;
 }
-
-*{ box-sizing:border-box; margin:0; padding:0; }
-html{ scroll-behavior:smooth; }
-
-body{
-  font-family:'Open Sans', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background:var(--warm-cream);
-  color:var(--text);
-  line-height:1.6;
-}a
-
-a{ text-decoration:none; color:inherit; }
-
-h1,h2{
-  font-family:'Nordeco','Cormorant Garamond','Georgia',serif;
-  letter-spacing:0.2px;
-}
-
-.container{ max-width:1000px; margin:0 auto; padding:50px 20px; }
-
 /* HERO */
 .page-hero{
   text-align:center;
