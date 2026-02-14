@@ -25,14 +25,14 @@
   margin-right:auto;
 }
 
-.sessions .mini-row{
+.mini-row{
       margin-top:18px;
       display:flex;
       gap:12px;
       flex-wrap:wrap;
       justify-content:center;
     }
-    .sessions .mini-pill{
+.mini-pill{
       background: rgba(255,255,255,0.18);
       border: 1px solid rgba(255,255,255,0.24);
       padding:10px 14px;
