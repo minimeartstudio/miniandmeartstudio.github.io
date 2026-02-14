@@ -376,62 +376,6 @@ ul{ list-style:none; padding-left:0; }
   box-shadow:0 14px 30px rgba(0,0,0,0.16);
 }
 
-/* =================================
-   INSTAGRAM STRIP
-================================= */
-
-/* =================================
-   INSTAGRAM STRIP — COMPACT VERSION
-================================= */
-
-.ig-strip{
-  background:#fff;
-  padding:40px 0; /* was 70px */
-  border-top:1px solid rgba(0,0,0,0.06);
-}
-
-.ig-strip-head.minimalist{
-  justify-content:center;
-  margin-bottom:16px;
-}
-
-.ig-strip h2{
-  color:var(--clay);
-  font-size:1.4rem; /* smaller */
-}
-
-.ig-follow{
-  font-family:'Quicksand', sans-serif;
-  font-weight:800;
-  font-size:0.95rem;
-  color:var(--clay);
-  border-bottom:1px solid rgba(201,122,93,0.3);
-  padding-bottom:2px;
-  transition:0.2s ease;
-}
-
-.ig-follow:hover{
-  border-bottom-color: rgba(201,122,93,0.7);
-}
-
-/* Smaller grid */
-.ig-embeds{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
-  gap:16px;
-}
-
-/* Force embeds smaller */
-.ig-embeds .instagram-media{
-  margin:0 !important;
-  width:100% !important;
-  min-width:unset !important;
-  max-width:100% !important;
-  border-radius:14px !important;
-  overflow:hidden !important;
-  box-shadow:0 6px 18px rgba(0,0,0,0.06);
-}
-
 /* Footer */
 footer{
   background:var(--dusty-sky);
