@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mixing Paint + Color Basics | Studio Notes</title>
+
+  <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/journal/journal.css">
+</head>
+
+<body id="top">
+
+  <!-- Back to top button -->
+  <a href="#top" class="back-to-top" aria-label="Back to top">↑</a>
+
+  <!-- TOP NAV -->
+  <div id="site-header"></div>
+
+  <main class="container">
+    <article class="post">
+      <h1>Mixing Paint + The Simplest Color Basics</h1>
+      <p class="meta">Process • 6 min read</p>
+
+      <p>
+        There is no “right” way to mix color.
+        There is only curiosity.
+      </p>
+
+      <p>
+        If you feel like you know nothing about art, this is for you.
+        We’re starting at the very beginning — slow, simple, and usable.
+      </p>
+
+      <h2>Start With Just Three Colors</h2>
+      <p>
+        You do not need every color at the store.
+        In fact, fewer is better.
+      </p>
+
+      <ul>
+        <li>Red</li>
+        <li>Yellow</li>
+        <li>Blue</li>
+        <li>+ White</li>
+        <li>(Optional) + Black</li>
+      </ul>
+
+      <p>
+        Red, yellow, and blue are called <strong>primary colors</strong>.
+        That simply means you can’t mix other colors to make them —
+        but you can mix them to make almost everything else.
+      </p>
+
+      <h2>What Happens When We Mix Them?</h2>
+      <ul>
+        <li>Red + Yellow = Orange</li>
+        <li>Yellow + Blue = Green</li>
+        <li>Blue + Red = Purple</li>
+      </ul>
+
+      <p>
+        That’s basic color theory.
+        No memorizing wheels required.
+        Just notice what happens.
+      </p>
+
+      <h2>What Does White Do?</h2>
+      <p>
+        White softens a color.
+        It makes it lighter and often calmer.
+      </p>
+
+      <ul>
+        <li>Red becomes pink</li>
+        <li>Blue becomes sky blue</li>
+        <li>Green becomes mint</li>
+      </ul>
+
+      <p>
+        If a color feels too strong, add a tiny bit of white.
+        Start small. You can always add more.
+      </p>
+
+      <h2>What About Black?</h2>
+      <p>
+        Black can deepen a color — but it’s powerful.
+        Use a <strong>tiny touch</strong>, like a pinhead amount.
+      </p>
+
+      <ul>
+        <li>Blue + a tiny bit of black = a deeper navy</li>
+        <li>Green + a tiny bit of black = a deeper forest tone</li>
+        <li>Red + a tiny bit of black = a deeper burgundy tone</li>
+      </ul>
+
+      <p>
+        If black takes over, don’t fight it.
+        Add more of your main color, or a little white to soften.
+      </p>
+
+      <h2>Warm Colors + Cool Colors (The Feeling of Color)</h2>
+      <p>
+        Colors carry temperature.
+        Not literal heat — but feeling.
+      </p>
+
+      <h3>Warm Colors</h3>
+      <ul>
+        <li>Red</li>
+        <li>Orange</li>
+        <li>Yellow</li>
+      </ul>
+
+      <p>
+        Warm colors feel energetic, cozy, bold.
+        Think sunlight. Fire. Late afternoon.
+      </p>
+
+      <h3>Cool Colors</h3>
+      <ul>
+        <li>Blue</li>
+        <li>Green</li>
+        <li>Purple</li>
+      </ul>
+
+      <p>
+        Cool colors feel calm, quiet, spacious.
+        Think water. Shade. Early morning.
+      </p>
+
+      <p>
+        Try this: use only warm colors on one page.
+        Then only cool colors on another.
+        Notice the difference in mood.
+      </p>
+
+      <h2>Printable: Simple Color Mixing Chart for Parents</h2>
+      <p>
+        Want a quick reference to keep nearby during paint time?
+        Download the one-page mixing chart here:
+      </p>
+
+      <!-- IMPORTANT:
+           Put the PDF in your repo at /downloads/color-mixing-chart.pdf
+           (instructions below) -->
+      <p>
+   <a class="btn btn-primary" href="../../downloads/color-mixing-chart.pdf" download>
+  Download the Color Mixing Chart (PDF)
+  </a>
+      </p>
+
+      <h2>A Simple Way to Explore This With Your Child</h2>
+      <ol>
+        <li>Put out red, yellow, and blue.</li>
+        <li>Let them choose two.</li>
+        <li>Mix slowly.</li>
+        <li>Pause and look.</li>
+        <li>Ask: “What do you notice?”</li>
+      </ol>
+
+      <p>
+        No correcting.
+        No fixing.
+        No showing the “right” way.
+      </p>
+
+      <p>
+        Color mixing is just curiosity made visible.
+        And that’s enough.
+      </p>
+
+      <a href="../" class="back-link">← Back to Studio Notes</a>
+    </article>
+  </main>
+
+  <script src="/main.js"></script>
+</body>
+</html>
