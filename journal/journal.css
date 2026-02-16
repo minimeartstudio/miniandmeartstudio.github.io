@@ -146,6 +146,19 @@
   .post{ padding-bottom:38px; }
 }
 
+/* Buttons inside posts should look like buttons (not underlined links) */
+.post a.btn{
+  color:#fff;
+  border-bottom:none;
+  padding-bottom:0;
+  font-weight:700; /* optional: match your .btn */
+}
+
+.post a.btn:hover{
+  border-bottom:none;
+  opacity:1;
+}
+
 .download-wrap {
   margin: 24px 0;
 }
