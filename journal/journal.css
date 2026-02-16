@@ -145,3 +145,7 @@
   .page-hero p{ font-size:1.02rem; }
   .post{ padding-bottom:38px; }
 }
+
+.download-wrap {
+  margin: 24px 0;
+}
